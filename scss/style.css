@@ -235,7 +235,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 100px;
+  padding: 0 80px;
   gap: 200px;
   position: relative;
   height: 100%;
@@ -379,6 +379,12 @@
 
 * body main .main-content .sidebar {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 * body main .main-content .sidebar .hero {

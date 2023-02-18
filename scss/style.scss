@@ -183,7 +183,7 @@
             .main-content {
                 display: flex;
                 align-items: center;
-                padding: 0 100px;
+                padding: 0 80px;
                 gap: 200px;
                 position: relative;
                 height: 100%;
@@ -294,7 +294,8 @@
 
                 .sidebar {
                     width: 100%;
-
+                    display: flex;
+                    justify-content: end;
                     .hero {
                         
                         height: 100%;
