@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./scss/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="container">
+  <header>
+
+    <section class="drop-snap">
+      <figure>
+        <img src="./images/logo.svg" alt="logo" class="logo-img">
+      </figure>
+      
+      <nav class="drop-items menu">
+        <ul>
+          <li class="active-feature">
+            <a>
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="arrow-feature" id="arrow">
+            </a>
+          </li>
+
+          <li class="active-company">
+            <a>
+              Company
+              <img src="./images/icon-arrow-down.svg" alt="arrow-down" id="arrow-company">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">Careers</a>
+          </li>
+
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <nav class="nav menu">
+      <a href="#" class="login menu">Login</a>
+
+      <a href="#">
+        <button type="button" class="btn-register menu" title="Registre-se">Register</button>
+      </a>
+
+
+      <button type="button" id="toggle-btn">
+        <img src="./images/icon-menu.svg" alt="menu" class="icon">
+      </button>
+    </nav>
+
+    <section class="collapsed" id="collapsed" style="display: none;">
+      <header>
+       <img src="./images/icon-close-menu.svg" alt="close" class="close" id="close" title="Fechar">
+      </header>
+
+      <ul>
+
+        <li>
+          <a href="#" onclick="showMobileMenuF()">
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="collapsed-f-arrow">
+          </a>
+         
+          <li class="collapsed-list feature-list-menu" id="feature-clps" style="display: none;">
+            <a href="#" class="paddingB">
+              <img src="./images/icon-todo.svg" alt="todo-icon">
+              Todo List
+            </a>
+            <a href="#" class="paddingB">
+              <img src="./images/icon-calendar.svg" alt="calendar-icon">
+              Calendar
+            </a>
+            <a href="#" class="paddingB">
+              <img src="./images/icon-reminders.svg" alt="reminders-icon">
+              Reminders
+            </a>
+            <a href="#">
+              <img src="./images/icon-planning.svg" alt="planing-icon">
+              Planning
+            </a>
+         </li>
+        </li>
+
+        <li>
+          <a href="#" onclick="showMobileMenuC()">
+            Company
+            <img src="./images/icon-arrow-down.svg" alt="arrow-down" class="collapsed-c-arrow">
+          </a>
+          <li class="collapsed-list company-list-menu" style="display: none;">
+            <a href="#" class="paddingB">History</a>
+            <a href="#" class="paddingB">Our Team</a>
+            <a href="#">Blog</a>
+          </li>
+        </li>
+        
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+
+      <section class="join">
+        <a href="#">Login</a>
+        <button>
+          <a href="#">Register</a>
+        </button>
+      </section>
+    </section>
+
+  </header>
+
+  <article class="main-content">
+    
+    <section class="content">
+      
+      <section class="feature-section hidden" id="feature">
+        <ul class="feature-list">
+          <li class="todo-list">
+            <a href="#">
+              <img src="./images/icon-todo.svg" alt="todo-icon">
+              Todo list
+            </a>
+          </li>
+
+          <li class="calender">
+            <a href="#">
+              <img src="./images/icon-calendar.svg" alt="calender-icon">
+              Calender
+            </a>
+          </li>
+
+          <li class="reminders">
+            <a href="#">
+              <img src="./images/icon-reminders.svg" alt="reminders-icon">
+              Reminders
+            </a>
+          </li>
+
+          <li class="planning">
+            <a href="#">
+              <img src="./images/icon-planning.svg" alt="planning-icon">
+              Planning
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="company-section hidden" id="company">
+        <ul class="company-list">
+          <li>
+            <a href="#">
+              History
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Our Team
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              Blog</li>
+            </a>
+        </ul>
+      </section>
+      <section class="content-info">
+        <h1>Make remote work</h1>
+
+        <p> Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+  
+          <button type="button" title="Veja mais">Learn more</button>
+      </section>
+
+      <section class="client-makers">
+        <img src="./images/client-databiz.svg" alt="client-databiz">
+        <img src="./images/client-audiophile.svg" alt="client-audiophile">
+        <img src="./images/client-meet.svg" alt="client-meet">
+        <img src="./images/client-maker.svg" alt="client-maker">
+      </section>
+    </section>
+
+    <aside class="sidebar">
+        <figure class="hero">
+          <picture>
+            <source media="(max-width: 1300px)" srcset="./images/image-hero-mobile.png">
+            <img src="./images/image-hero-desktop.png" alt="hero" class="hero-img">
+          </picture>
+      </figure>
+    </aside>
+  </article>
+</main>
+<script src="./scripts/script.js"></script>
+</body>
+</html>
