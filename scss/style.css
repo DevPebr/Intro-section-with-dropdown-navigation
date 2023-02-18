@@ -529,6 +529,8 @@
   }
   * body main .main-content .sidebar {
     width: 100%;
+    height: 440px;
+    padding-bottom: 20px;
   }
   * body main .main-content .sidebar .hero {
     display: -webkit-box;
@@ -538,15 +540,19 @@
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+    height: 100%;
   }
-  * body main .main-content .sidebar .hero img {
+  * body main .main-content .sidebar .hero picture {
+    height: 100%;
+  }
+  * body main .main-content .sidebar .hero picture img {
     width: 100%;
+    height: 100%;
   }
   * body main .main-content .company-section, * body main .main-content .feature-section {
     display: none;
   }
   * body main .main-content .content {
-    padding-top: 50px;
     width: 100%;
   }
   * body main .main-content .content .content-info {
@@ -558,8 +564,8 @@
     width: 100%;
   }
   * body main .main-content .content .content-info h1 {
-    font-size: 2rem;
-    width: 343px;
+    font-size: 2.1rem;
+    width: 100%;
   }
   * body main .main-content .content .content-info p {
     font-size: 0.9rem;

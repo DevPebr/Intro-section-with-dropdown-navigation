@@ -470,14 +470,23 @@
                     gap: 20px;
                     .sidebar  {
                         width: 100%;
+                        height: 440px;
+                        padding-bottom: 20px;
 
                         .hero {
                             display: flex;
                             justify-content: center;
                             width: 100%;
-                            img {
-                                width: 100%;
+                            height: 100%;
+                            picture {
+                                height: 100%;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
                             }
+                           
                         }
                     }
 
@@ -487,7 +496,7 @@
 
 
                     .content {
-                        padding-top: 50px;
+                       
                         width: 100%;
 
                         .content-info {
@@ -497,8 +506,8 @@
                             width: 100%;
 
                             h1 {
-                                font-size: 2rem;
-                                width: 343px;
+                                font-size: 2.1rem;
+                                width: 100%;
 
                             }
 
@@ -521,7 +530,6 @@
                         display: flex;
                         justify-content: center;
                         width: 100%;
-                       
                         margin-top: 50px;
                        
                         img {
