@@ -321,14 +321,18 @@
         } // main
     } // body
 
-    @media screen and (max-width: 1300px) {
+
+    @media screen and (max-width: 1290px) {
+    
         body {
             display: flex;
             justify-content: center;
-
             main {
                 padding: 0 0 0 0;
                 width: 100%;
+                margin: auto;
+                
+
                 header {
                     width: 100%;
                     margin-top: 20px;
@@ -362,14 +366,17 @@
                         width: 100%;
                         display: flex;
                         justify-content: center;
+                        height: 600px;
 
                         .hero {
                             display: flex;
                             justify-content: center;
                             width: 100%;
+                            height: 100%;
 
                             img {
                                 width: 100%;
+                                height: 100%;
                             }
                         }
                     }
@@ -385,16 +392,17 @@
                             align-items: center;
 
                             h1 {
-                                font-size: 3.5rem;
+                                font-size: 4rem;
                             }
 
                             p {
-                                width: 100%;
+                                width: 600px;
                             }
                        }
 
                        .client-makers {
-                        margin-top: 20px;
+                        margin-top: 50px;
+                        padding-bottom: 100px;
                        }
                     }
                 }
@@ -404,9 +412,40 @@
     } // @media
 
     @media screen and (max-width: 715px) {
-        .content {
-            width: 100%;
+        body {
+            main {
+                
+                .main-content {
+
+                    .content {
+                        width: 100%;
+                        
+                    .content-info p{
+                        width: 400px;
+                    }
+
+                    .content-info h1 {
+                        font-size: 3rem;
+                    }
+
+                   
+                    }
+                    
+                    .client-makers {
+                        
+                        
+                        img {
+                            
+                            padding-top: 30px;
+                        }
+                        
+                    }
+                    
+                }
+            }
         }
+
+       
     }
 
 
@@ -419,8 +458,9 @@
         body {
             
             main {
-                padding: 20px 0;
-                   .header {
+                
+                   header {
+                        height: 80px;
                     .nav {
                         gap: 0;
                     }
@@ -447,31 +487,33 @@
 
 
                     .content {
-                        padding-top: 0;
-                        width: 350px;
+                        padding-top: 50px;
+                        width: 100%;
 
                         .content-info {
-                            gap: 10px;
+                            gap: 20px;
                             text-align: center;
                             align-items: center;
                             width: 100%;
 
                             h1 {
-                                font-size: 1.7rem;
-                                width: 320px;
+                                font-size: 2rem;
+                                width: 343px;
 
                             }
 
                             p {
-                                font-size: 0.8rem;
+                                font-size: 0.9rem;
+                                width: 350px;
                                 line-height: 20px;
-                                width: 320px;
+                                
                             }
 
                             button {
-                                width: 150px;
+                                width: 170px;
                                 padding: 10px;
                                 font-size: 1rem;
+                                
                             }
                        }
 
@@ -479,10 +521,11 @@
                         display: flex;
                         justify-content: center;
                         width: 100%;
-
+                       
+                        margin-top: 50px;
+                       
                         img {
-                            width: 15%;
-                            height: auto;
+                            width: 18%;
                         }
                        }
                     }
